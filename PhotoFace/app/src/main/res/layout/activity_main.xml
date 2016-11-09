@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/camerabackground"
+    tools:context="es.iesnervion.jmramirez.photoface.Main">
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:text="@string/camera"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:text="@string/gallery"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btnCamera"
+        android:layout_alignStart="@+id/btnCamera" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="44dp"
+        android:id="@+id/myImage" />
+
+</RelativeLayout>
